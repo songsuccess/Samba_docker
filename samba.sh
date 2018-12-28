@@ -12,11 +12,11 @@
 #         NOTES: ---
 #        AUTHOR: ---
 
-#  ORGANIZATION: moresec.cn/
+#  ORGANIZATION: moresec.cn
 #       CREATED: 09/28/2014 12:11
 #      REVISION: 1.0
-#       DEFAULT: USER:admin PWD:12345
-#      TEST_ENV: 192.168.110.125
+#       DEFAULT: USER:admin PWD:1qaz2wsx
+#      TEST_ENV: 192.168.110.147
 #===============================================================================
 
 set -o nounset                              # Treat unset variables as an error
@@ -69,7 +69,7 @@ share() { local share="$1" path="$2" browsable=${3:-yes} ro=${4:-yes} \
         echo "   admin users = $(tr ',' ' ' <<< $admins)" >>$file
     echo -e "" >>$file
 }
-# Default: users:admin password: 12345
+# Default: users:admin password: 1qaz2wsx
 ### timezone: Set the timezone for the container
 # Arguments:
 #   timezone) for example EST5EDT
